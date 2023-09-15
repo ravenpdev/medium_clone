@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="border-b border-gray-900 bg-gray-100 p-8 text-center sm:text-left lg:px-40 lg:py-28">
+    <div className="border-b border-gray-900 bg-gray-100 p-8 text-center sm:px-48 sm:py-28 sm:text-left">
       <div>
         <div className="space-y-4">
           <h2 className="font-serif text-8xl">Stay curious.</h2>

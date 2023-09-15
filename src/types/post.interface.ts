@@ -3,9 +3,9 @@ export interface Post {
     img_url: string
     username: string
   }
-  post: {
-    title: string
-  }
+  title: string
+  description?: string
+  imge_url: string
   created_at: string
   minsToRead: number
   memberOnly: boolean

@@ -6,12 +6,12 @@ type NavbarProps = {
 
 export default function Navbar({ title }: NavbarProps) {
   return (
-    <div className="border-b border-gray-900">
-      <header className="flex items-center justify-between px-40 py-4">
+    <div className="fixed top-0 w-full border-b border-gray-900">
+      <header className="flex h-20 items-center justify-between px-8 lg:px-48">
         <h1 className="text-2xl font-semibold">
           <Link to={'/'}>{title}</Link>
         </h1>
-        <nav>
+        <nav className="hidden lg:block">
           <ul className="flex gap-4 text-sm">
             <li>
               <Link to={'/about'}>Our story</Link>

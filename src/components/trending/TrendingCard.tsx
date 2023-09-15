@@ -17,7 +17,7 @@ export default function TrendingCard({ count, post }: TrendingCardProps) {
           <img className="rounded-md" src={post.user.img_url} alt="user_image" />
           <span className="text-sm">{post.user.username}</span>
         </div>
-        <p className="font-bold">{post.post.title}</p>
+        <p className="font-bold">{post.title}</p>
         <div className="flex gap-2 text-sm font-light text-gray-500">
           <span>{post.created_at}</span>
           <span>-</span>
