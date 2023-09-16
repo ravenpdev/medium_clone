@@ -1,4 +1,4 @@
-export default function Hero() {
+export const Hero = () => {
   return (
     <div className="border-b border-gray-900 bg-gray-100 p-8 text-center sm:px-48 sm:py-28 sm:text-left">
       <div>

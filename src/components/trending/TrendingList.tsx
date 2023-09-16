@@ -15,7 +15,7 @@ export default function TrendingList({ trendings }: TrendingListProps) {
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {trendings.map((trending, index) => (
-          <TrendingCard count={index + 1} post={trending} />
+          <TrendingCard key={index} count={index + 1} post={trending} />
         ))}
       </div>
     </section>

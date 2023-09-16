@@ -1,8 +1,7 @@
-import Hero from '@components/Hero'
-import Navbar from '@components/Navbar'
+import { Navbar, Hero } from '@components'
 import PostsList from '@components/posts/PostsList'
 import TrendingList from '@components/trending/TrendingList'
-import { Post } from '@types'
+import { Post } from '@custom_types'
 
 const posts: Post[] = [
   {

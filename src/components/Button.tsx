@@ -15,6 +15,7 @@ type ButtonProps = {
   rounded?: boolean
   uppercase?: boolean
   fullWidth?: boolean
+  disabled?: boolean
   onClick?: () => void
 }
 
@@ -27,6 +28,7 @@ export const Button = ({
   rounded = true,
   uppercase = false,
   fullWidth = false,
+  disabled = false,
   onClick
 }: ButtonProps) => {
   const styles: string[] = []
@@ -90,6 +92,7 @@ export const Button = ({
       className={`px-3 py-2 ${fullWidth ? 'w-full' : ''} ${styles.join(' ')}`}
       type={type}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>

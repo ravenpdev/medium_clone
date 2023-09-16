@@ -4,7 +4,7 @@ type NavbarProps = {
   title: string
 }
 
-export default function Navbar({ title }: NavbarProps) {
+export const Navbar = ({ title }: NavbarProps) => {
   return (
     <div className="fixed top-0 w-full border-b border-gray-900">
       <header className="flex h-20 items-center justify-between px-8 lg:px-48">
