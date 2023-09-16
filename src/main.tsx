@@ -1,28 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'react-toastify/dist/ReactToastify.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import '@/index.css'
 import ErrorPage from '@/error-page'
-import Root from '@routes/root'
-import Login from '@routes/login'
 import { Provider } from 'react-redux'
 import { store } from '@store/store'
+import HomePage from '@pages/home.page'
+import LoginPage from '@pages/login.page'
+import RootPage from '@pages/root.page'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
-    errorElement: <ErrorPage />
-    // children: [
-    //   {
-    //     path: 'login',
-    //     element: <Login />
-    //   }
-    // ]
-  },
-  {
-    path: 'login',
-    element: <Login />
+    element: <RootPage />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '',
+        element: <HomePage />
+      },
+      {
+        path: 'login',
+        element: <LoginPage />
+      }
+    ]
   }
 ])
 
